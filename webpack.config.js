@@ -34,6 +34,10 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
       },
+      {
+        test: /\.(mp3|wav)$/i, // Handle MP3 and WAV files
+        type: "asset/resource", // Use Webpack 5's built-in asset/resource module
+      },
     ],
   },
 };

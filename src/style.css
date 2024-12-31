@@ -1,0 +1,291 @@
+body{
+    background-color: black;
+    font-family: "Bebas Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;    
+    background-image: url('https://media.giphy.com/media/3oz8xBvY5MyxIdyuxa/giphy.gif');
+    background-size: cover;
+}
+
+.fade-in-delay{
+    animation: fadeIn 2s;
+    animation-delay: 2s;
+}
+
+
+
+.fade-in{
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.landing-page{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.landing-page img{
+    width: 650px;
+    height: 200px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 1rem;
+    width: 100%;
+}
+
+form input{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    font-size: 1.5rem;
+}
+
+#nameSubmit{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: darkgreen;
+}
+
+form button:active{
+    background-color: lightgreen;
+}
+
+form button:focus{
+    outline: none;
+}
+
+form label{
+    font-family: 'Noto Sans';
+    font-size: 1.5rem;
+    color: white;
+}
+
+form label:hover{
+    color: lightgreen;
+}
+
+#soundToggle{
+    width: 150px;
+    height: 80px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+#chooseShipPage{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+}
+
+#chooseShipPage h1{
+    font-size: 4rem;
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 1px;
+    width: 500px;
+    height: 500px;
+    border: 1px solid white;
+}
+
+.cell{
+    background-color: white;
+    border: 1px solid black;
+}
+
+.cell:hover{
+    background-color: lightgreen;
+}
+
+.ship-placed{
+    background-color: black;
+}
+
+#directionChoose{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+
+.ship-placed:hover{
+    background-color: black;
+    cursor:not-allowed;
+}
+
+.invalid:hover{
+    background-color: red;
+    cursor: not-allowed;
+}
+
+.ship-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.ship-div p{
+    font-size: 1.5rem;
+}
+
+#buttonDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#buttonDiv button{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+#buttonDiv button:hover{
+    background-color: darkgreen;
+}
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 1px;
+    width: 500px;
+    height: 500px;
+    border: 1px solid white;
+}
+
+#gameContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+}
+
+#playerBoardDiv, #computerBoardDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: black;
+}
+
+#playerBoardDiv h2, #computerBoardDiv h2{
+    font-size: 2rem;
+    color: white;
+}
+
+
+.cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.cell img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#gamePage{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+}
+
+#moveInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#moveInfo h2{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#winnerPage{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+}
+
+#winnerPage h2{
+    font-size: 4rem;
+}
+
+#playAgainButton{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
